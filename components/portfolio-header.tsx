@@ -1,0 +1,23 @@
+import Image from "next/image";
+import { ThemeToggle } from "./theme-toggle";
+
+export function PortfolioHeader() {
+    return (
+        <div className="flex md:flex-row flex-col-reverse justify-between items-start w-full gap-5">
+          <div className="flex-1">
+            <h1 className="text-[2.5rem] font-bold">Hi, I&apos;m Shiva</h1>
+            <ThemeToggle />
+            <span className="text-muted-foreground text-xl text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, amet est accusamus, similique quo officia provident animi sapiente doloremque 
+            </span>
+          </div>
+          <Image 
+            src={"/my-photo.jpeg"} 
+            alt="My Photo" 
+            height={100} 
+            width={100} 
+            className="rounded-full object-cover object-top w-32 h-32"
+          />
+        </div>
+    )
+}
