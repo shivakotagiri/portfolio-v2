@@ -23,6 +23,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${manrope.className} h-full`}
+      suppressHydrationWarning
     >
       <body className="h-full w-full">
         <ThemeProvider>
