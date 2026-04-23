@@ -5,11 +5,11 @@ export function ListItem() {
     return (
         <Link href={"https://cmrithyderabad.edu.in/"} target="_blank" className="flex w-full justify-between items-center">
             <div className="flex gap-3 items-center justify-center">  
-                <div className="relative inline-block scale-110">
+                <div className="relative inline-block scale-120">
                     <Avatar>
                         <AvatarImage 
                             src={"/cmrit.png"}
-                            className="object-center object-cover rounded-full"
+                            className="object-center object-cover rounded-full p-1"
                             alt="CMR Institute of Technology"
                             width={100}
                             height={100}
@@ -18,7 +18,7 @@ export function ListItem() {
                             CM
                         </AvatarFallback>
                     </Avatar>
-                    <span className="inset-0 absolute block h-full w-full ring-2 rounded-full ring-neutral-500" />
+                    <span className="inset-0 absolute block h-full w-full ring-1 rounded-full ring-neutral-300 dark:ring-neutral-600" />
                 </div>
                 <div className="leading-none">
                     <h1 className="text-base font-semibold">
