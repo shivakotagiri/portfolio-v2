@@ -1,13 +1,28 @@
-import Image from "next/image";
-import Rust from "@/public/icons/rust.svg"
+import { FC } from "react";
 
-export function SkillItem({ name }: { name: string }) {
-    return (
-        <div className="flex border py-2.5 px-4 gap-1 w-fit rounded-2xl">
-            <Image className="w-5 h-5" src={Rust} alt="Icon" width={100} height={100} />
-            <span>
-                { name }
-            </span>
-        </div>
-    )
+ type IconProps = {
+  size?: number;
+  color?: string;
+  strokeWidth?: number;
+  background?: string;
+  opacity?: number;
+  rotation?: number;
+  shadow?: number;
+  flipHorizontal?: boolean;
+  flipVertical?: boolean;
+  padding?: number;
+};
+
+interface SkillItemProps {
+    name: string,
+    Icon: FC<IconProps>
+}
+
+export function SkillItem({ name, Icon }: SkillItemProps) {
+  return (
+    <div className="flex items-center justify-center border py-2.5 px-4 gap-2 w-fit rounded-2xl">
+      <Icon size={20} />
+      <span className="text-sm">{name}</span>
+    </div>
+  );
 }
