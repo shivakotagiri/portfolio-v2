@@ -20,9 +20,9 @@ interface SkillItemProps {
 
 export function SkillItem({ name, Icon }: SkillItemProps) {
   return (
-    <div className="flex items-center justify-center border py-2.5 px-4 gap-2 w-fit rounded-2xl">
+    <div className="flex items-center justify-center border py-2 w-30 px-4 gap-2 rounded-2xl">
       <Icon size={20} />
-      <span className="text-sm">{name}</span>
+      <span className="text-xs">{name}</span>
     </div>
   );
 }
