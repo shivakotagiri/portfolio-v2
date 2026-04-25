@@ -21,15 +21,15 @@ export function ListItem() {
                     <span className="inset-0 absolute block h-full w-full ring-1 rounded-full ring-neutral-300 dark:ring-neutral-600" />
                 </div>
                 <div className="leading-none">
-                    <h1 className="text-base font-semibold">
+                    <h1 className="sm:text-base text-xs font-semibold">
                         CMR Institute of Technology
                     </h1>
-                    <span className="text-muted-foreground text-sm">
+                    <span className="text-muted-foreground sm:text-sm text-[9px]">
                         Bachelor&apos;s of Technology
                     </span>
                 </div>
             </div>
-            <span className="text-sm text-muted-foreground">2022 - 2026</span>
+            <span className="sm:text-sm text-xs text-muted-foreground">2022 - 2026</span>
         </Link>
     )
 }

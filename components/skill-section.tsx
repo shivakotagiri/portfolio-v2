@@ -1,4 +1,4 @@
-import { skills } from "@/public/lib/skills"
+import { skills } from "@/lib/skills"
 import { SkillItem } from "./skill-item";
 
 export function SkillSection() {

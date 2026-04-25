@@ -5,14 +5,12 @@ import { SkillSection } from "@/components/skill-section";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-start min-h-screen pt-24 ">
-      <div className="h-full w-full max-w-160 flex flex-col gap-15">
+    <div className="flex justify-center w-screen items-start min-h-screen sm:p-0 p-8">
+      <div className="h-full pt-10 sm:pt-24 w-full max-w-155 flex flex-col gap-15">
         <PortfolioHeader />
         <Education />
         <SkillSection />
-        <div className="w-full h-full flex justify-center items-center">
-          <Dock />
-        </div>
+        <Dock />
       </div>
     </div>
   );
