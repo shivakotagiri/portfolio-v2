@@ -1,6 +1,7 @@
 import { Dock } from "@/components/dock";
 import { Education } from "@/components/education";
 import { PortfolioHeader } from "@/components/portfolio-header";
+import { Projects } from "@/components/projects";
 import { SkillSection } from "@/components/skill-section";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <PortfolioHeader />
         <Education />
         <SkillSection />
+        <Projects />
         <Dock />
       </div>
     </div>
