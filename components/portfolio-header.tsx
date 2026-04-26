@@ -4,7 +4,7 @@ export function PortfolioHeader() {
     return (
         <div className="flex md:flex-row flex-col-reverse justify-between items-start w-full gap-5">
           <div className="flex-1">
-            <h1 className="sm:text-[2.5rem] text-[2rem] font-bold">Hi, I&apos;m Shiva</h1>
+            <h1 className="sm:text-[3rem] text-[2rem] font-bold tracking-tighter">Hi, I&apos;m Shiva</h1>
             <span className="text-muted-foreground sm:text-xl text-base text-justify">
               Software Developer. I love building things and helping people. Very active on Twitter. Learning in public, and growing through consistent practice. 
             </span>

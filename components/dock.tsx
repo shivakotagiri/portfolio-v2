@@ -10,7 +10,7 @@ import { ThemeToggle } from "./theme-toggle";
 
 export function Dock() {
     return (
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 rounded-4xl dark:shadow-neutral-900 z-10 dark:bg-[#171717] shadow-neutral-300 border shadow-top-lr">
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 rounded-4xl z-10 dark:bg-[#171717] bg-white border">
             <div className="flex gap-2 p-2 items-center justify-center">
                 <DockItem name="Home" Icon={Home} link="/" />
                 <DockItem name="Resume" Icon={File} link="/resume.pdf" />
