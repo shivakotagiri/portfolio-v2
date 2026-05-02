@@ -29,3 +29,4 @@ export const skills = [
   { name: "Postgres", Icon: PostgresqlIcon },
   { name: "Docker", Icon: DockerIcon },
 ];
+

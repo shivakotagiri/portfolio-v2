@@ -24,7 +24,7 @@ export function DockItem({ name, Icon, link }: {
                     </Link>
                 </TooltipTrigger>
                 <TooltipContent sideOffset={25}>
-                    { name }
+                  {name}
                 </TooltipContent>
             </Tooltip>
         </div>
