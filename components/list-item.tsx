@@ -8,7 +8,7 @@ interface ListItemProps {
     delay?: number;
 }
 
-export function ListItem({ delay }: ListItemProps) {
+export function ListItem({ }: ListItemProps) {
     return (
         <Link href={"https://cmrithyderabad.edu.in/"} target="_blank">
             <motion.div

@@ -12,7 +12,7 @@ export function Dock() {
             gap: "8px"
         },
         hovered: {
-            gap: "12px",
+            gap: "10px",
         }
     }
     return (

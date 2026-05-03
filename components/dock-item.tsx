@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import Link from "next/link";
 import { ComponentType } from "react";
-import { motion } from "framer-motion";
 
 export function DockItem({ name, Icon, link }: {
     name: string,
@@ -12,7 +11,7 @@ export function DockItem({ name, Icon, link }: {
     link?: string
 }) {
     return (
-        <motion.div className="flex gap-2">
+        <div className="flex gap-2">
             <Tooltip>
                 <TooltipTrigger asChild>
                     <Link target={link !== "/" ? "_blank": "_self"} href={link || ""}>
@@ -28,6 +27,6 @@ export function DockItem({ name, Icon, link }: {
                   {name}
                 </TooltipContent>
             </Tooltip>
-        </motion.div>
+        </div>
     )
 }
