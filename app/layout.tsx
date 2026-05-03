@@ -4,6 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
+import { MaskCursorOverlay } from "@/components/ui/mask-cursor-overlay";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +38,7 @@ export default function RootLayout({
           <SmoothScrollProvider>
             <TooltipProvider>
               {children}
+              <MaskCursorOverlay />
             </TooltipProvider>
           </SmoothScrollProvider>
         </ThemeProvider>

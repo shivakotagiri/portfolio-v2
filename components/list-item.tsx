@@ -31,9 +31,9 @@ export function ListItem({ delay }: ListItemProps) {
                         <span className="inset-0 absolute block h-full w-full ring-1 rounded-full ring-neutral-300 dark:ring-neutral-600" />
                     </div>
                     <div className="leading-none">
-                        <h1 className="sm:text-base text-xs font-semibold">
+                        <span className="sm:text-base text-xs font-semibold block">
                             CMR Institute of Technology
-                        </h1>
+                        </span>
                         <span className="text-muted-foreground sm:text-sm text-[9px]">
                             Bachelor&apos;s of Technology
                         </span>
