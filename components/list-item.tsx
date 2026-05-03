@@ -12,14 +12,14 @@ export function ListItem({ delay }: ListItemProps) {
     return (
         <Link href={"https://cmrithyderabad.edu.in/"} target="_blank">
             <motion.div
-                className="flex w-full justify-between items-center"
+                className="flex items-center justify-between w-full"
             >
-                <div className="flex gap-3 items-center">  
+                <div className="flex items-center gap-3">  
                     <div className="relative inline-block scale-120">
                         <Avatar>
                             <AvatarImage 
                                 src={"/cmrit.png"}
-                                className="object-center object-cover rounded-full p-1"
+                                className="object-cover object-center p-1 rounded-full"
                                 alt="CMR Institute of Technology"
                                 width={100}
                                 height={100}
@@ -28,10 +28,10 @@ export function ListItem({ delay }: ListItemProps) {
                                 CM
                             </AvatarFallback>
                         </Avatar>
-                        <span className="inset-0 absolute block h-full w-full ring-1 rounded-full ring-neutral-300 dark:ring-neutral-600" />
+                        <span className="absolute inset-0 block w-full h-full rounded-full ring-1 ring-neutral-300 dark:ring-neutral-600" />
                     </div>
                     <div className="leading-none">
-                        <span className="sm:text-base text-xs font-semibold block">
+                        <span className="block text-xs font-semibold sm:text-base">
                             CMR Institute of Technology
                         </span>
                         <span className="text-muted-foreground sm:text-sm text-[9px]">
@@ -39,7 +39,7 @@ export function ListItem({ delay }: ListItemProps) {
                         </span>
                     </div>
                 </div>
-                <span className="sm:text-sm text-xs text-muted-foreground">2022 - 2026</span>
+                <span className="text-xs sm:text-sm text-muted-foreground">2022 - 2026</span>
             </motion.div>
         </Link>
     )

@@ -13,7 +13,7 @@ export function MaskCursorOverlay() {
   const x = useSpring(rawX, { damping: 28, stiffness: 220, mass: 0.4 });
   const y = useSpring(rawY, { damping: 28, stiffness: 220, mass: 0.4 });
 
-  const diameter = useMotionValue(30);
+  const diameter = useMotionValue(15);
 
   const divRef = useRef<HTMLDivElement>(null);
 
@@ -26,7 +26,7 @@ export function MaskCursorOverlay() {
   }, [diameter]);
 
   const onLeave = useCallback(() => {
-    animate(diameter, 30, {
+    animate(diameter, 15, {
       type: "tween",
       ease: "backOut",
       duration: 0.45,

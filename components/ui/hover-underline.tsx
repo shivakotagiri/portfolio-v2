@@ -48,7 +48,7 @@ export function HoverUnderline({ text, className, delay = 0 }: HoverUnderlinePro
           mass: 0.5,   
         }}
         className="
-          absolute left-0 right-0 bottom-0 h-0.5
+          absolute left-0 right-0 bottom-3 h-1
           bg-black dark:bg-white
           origin-left
         "

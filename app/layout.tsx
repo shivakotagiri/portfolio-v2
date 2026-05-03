@@ -33,12 +33,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="h-full w-full">
+      <body className="w-full h-full">
         <ThemeProvider>
           <SmoothScrollProvider>
             <TooltipProvider>
               {children}
-              <MaskCursorOverlay />
+              {/* <MaskCursorOverlay /> */}
             </TooltipProvider>
           </SmoothScrollProvider>
         </ThemeProvider>

@@ -15,18 +15,24 @@ import TypescriptIcon from "@/components/icons/typescript";
 
 export const skills = [
   { name: "Rust", Icon: RustIcon },
+  { name: "Solana smart contracts" },
   { name: "C", Icon: CIcon },
   { name: "Java", Icon: JavaIcon },
   { name: "HTML", Icon: Html5Icon },
   { name: "CSS", Icon: Css3Icon },
+  { name: "TailwindCSS" },
   { name: "JavaScript", Icon: JavascriptIcon },
   { name: "TypeScript", Icon: TypescriptIcon },
   { name: "React", Icon: ReactIcon },
+  { name: "Next.js", Icon: NextjsIcon },
   { name: "Node.js", Icon: NodejsIcon },
   { name: "Express.js", Icon: ExpressIcon },
   { name: "Hono.js", Icon: HonoIcon },
-  { name: "Next.js", Icon: NextjsIcon },
   { name: "Postgres", Icon: PostgresqlIcon },
+  { name: "Prisma" },
+  { name: "Drizzle ORM" },
   { name: "Docker", Icon: DockerIcon },
+  { name: "Kubernetes" },
+  { name: "Cloud deployments" },
 ];
 
