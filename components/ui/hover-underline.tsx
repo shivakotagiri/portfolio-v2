@@ -6,9 +6,10 @@ import { motion, Variants } from "motion/react";
 interface HoverUnderlineProps {
   text: string;
   className?: string;
+  delay?: number;
 }
 
-export function HoverUnderline({ text, className }: HoverUnderlineProps) {
+export function HoverUnderline({ text, className, delay = 0 }: HoverUnderlineProps) {
   const underlineVariants: Variants = {
     initial: { scaleX: 0 },
     hovered: { scaleX: 1 },
@@ -25,7 +26,18 @@ export function HoverUnderline({ text, className }: HoverUnderlineProps) {
       }}
       className={cn(className)}
     >
-      {text}
+      <motion.span 
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        viewport={{ amount: 0.6, once: true }}
+        transition={{
+          ease: "easeOut",
+          duration: 0.5,
+          delay
+        }}
+      >
+        {text}
+      </motion.span>
 
       <motion.span
         variants={underlineVariants}
@@ -38,7 +50,7 @@ export function HoverUnderline({ text, className }: HoverUnderlineProps) {
         className="
           absolute left-0 right-0 bottom-0 h-0.5
           bg-black dark:bg-white
-          origin-left transition-all duration-400
+          origin-left
         "
       />
     </motion.div>

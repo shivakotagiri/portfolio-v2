@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { SmoothScrollProvider } from "@/components/smooth-scroll-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,9 +33,11 @@ export default function RootLayout({
     >
       <body className="h-full w-full">
         <ThemeProvider>
-          <TooltipProvider>
-            {children}
-          </TooltipProvider>
+          <SmoothScrollProvider>
+            <TooltipProvider>
+              {children}
+            </TooltipProvider>
+          </SmoothScrollProvider>
         </ThemeProvider>
       </body>
     </html>

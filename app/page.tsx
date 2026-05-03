@@ -1,6 +1,5 @@
 import { Dock } from "@/components/dock";
 import { Education } from "@/components/education";
-import Grainient from "@/components/Grainient";
 import { PortfolioHeader } from "@/components/portfolio-header";
 import { Projects } from "@/components/projects";
 import { SkillSection } from "@/components/skill-section";
@@ -18,7 +17,7 @@ export default function HomePage() {
           color2="#e100ff"
           noiseFrequency={2.5}
           noiseAmplitude={1}
-          bandHeight={0.9}
+          bandHeight={1}
           bandSpread={1}
           octaveDecay={0.1}
           layerOffset={0}
@@ -27,7 +26,7 @@ export default function HomePage() {
           mouseInfluence={0}
         />
       </div>
-      <div className="h-full pt-10 sm:p-0 p-6 w-full max-w-155 flex flex-col gap-15 -translate-y-110">
+      <div className="h-full pt-10 sm:p-0 p-6 w-full max-w-155 flex flex-col gap-15 sm:-translate-y-125 -translate-y-135">
         <PortfolioHeader />
         <Education />
         <SkillSection />
