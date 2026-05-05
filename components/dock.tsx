@@ -35,7 +35,7 @@ export function Dock() {
                         <Separator className="h-9" orientation="vertical" />
                     </div>)
                 ))}
-                <div className="flex items-center justify-center w-10 h-10 p-1 border rounded-full">
+                <div className="flex items-center justify-center w-9 h-9 border p-1 rounded-full">
                     <ThemeToggle />
                 </div>
             </motion.div>

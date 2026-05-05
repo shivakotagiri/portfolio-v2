@@ -3,6 +3,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import { IoLogoGithub } from "react-icons/io";
+import { BiWorld } from "react-icons/bi";
+import Link from "next/link";
 
 export function ProjectCard() {
     const techStacks = ["Next.js", "Tailwindcss", "Typescript", "Shadcn UI", "Better-Auth", "Livekit", "Drizzle", "PostgreSQL", "Razorpay"]
@@ -27,6 +30,16 @@ export function ProjectCard() {
                                     { tech }
                                 </div>
                             ))}
+                        </div>
+                        <div className="flex gap-2 mt-3">
+                            <Link target="_blank" href={"https://github.com/shivakotagiri/onstream"} className="px-2 py-1 bg-accent-foreground text-accent rounded-sm flex gap-1 justify-center items-center cursor-pointer">
+                                <IoLogoGithub />
+                                <span className="text-[10px] font-semibold">Source</span>
+                            </Link>
+                            <Link target="_blank" href="https://onstream-umber.vercel.app/" className="px-2 py-1 bg-accent-foreground text-accent rounded-sm flex gap-1 justify-center items-center cursor-pointer">
+                                <BiWorld />
+                                <span className="text-[10px] font-semibold">Website</span>
+                            </Link>
                         </div>
                     </div>
                 </div>

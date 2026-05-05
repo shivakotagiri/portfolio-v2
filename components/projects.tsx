@@ -9,7 +9,7 @@ export function Projects() {
                 mainClassName="px-6 py-2 w-36 text-white bg-black dark:text-black dark:bg-white rounded-xl text-center"
             />
             <div className="flex flex-col items-center justify-center gap-2 leading-none">
-                <h1 className="sm:text-[3.5rem] text-[1.5rem] font-black text-center tracking-tighter">
+                <h1 className="sm:text-[3.25rem] text-[1.5rem] font-black text-center tracking-tighter">
                     Check out my latest work
                 </h1>
                 <span className="w-full h-full max-w-xl text-base leading-7 text-center text-muted-foreground sm:text-lg">

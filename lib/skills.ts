@@ -31,8 +31,12 @@ export const skills = [
   { name: "Postgres", Icon: PostgresqlIcon },
   { name: "Prisma" },
   { name: "Drizzle ORM" },
-  { name: "Docker", Icon: DockerIcon },
+  { name: "turborepo" },
+  { name: "docker", Icon: DockerIcon },
   { name: "Kubernetes" },
-  { name: "Cloud deployments" },
+  { name: "cloud deployments" },
+  { name: "monorepo" },
+  { name: "CI/CD pipelines" },
+  { name: "system design" },
+  { name: "OpenAI" },
 ];
-

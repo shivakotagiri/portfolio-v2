@@ -8,8 +8,8 @@ import SoftAurora from "@/components/SoftAurora";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen">
-      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen sm:pt-20">
+      {/* <div style={{ width: '100%', height: '600px', position: 'relative' }}>
         <SoftAurora
           speed={0.6}
           scale={1.5}
@@ -26,8 +26,8 @@ export default function HomePage() {
           enableMouseInteraction
           mouseInfluence={0}
         />
-      </div>
-      <div className="flex flex-col w-full h-full gap-10 p-6 pt-10 sm:p-0 max-w-155 sm:-translate-y-125 -translate-y-135">
+      </div> */}
+      <div className="flex flex-col w-full h-full gap-10 p-6 pt-10 sm:p-0 max-w-155 ">
         <PortfolioHeader />
         <About />
         <Education />
